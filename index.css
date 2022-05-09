@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,300&family=Roboto:wght@100;300;400&display=swap');
+html {
+    font-size: 10px;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.main {
+    width: 40%;
+    margin: auto;
+    box-shadow: 1px 1px 10px silver;
+    margin-top: 3rem;
+    text-align: center;
+    padding: 2rem;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form h2 {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+form input{
+    width: 60%;
+    margin-bottom: 1rem;
+    padding: 1.7rem;
+    outline: none;
+    border: none;
+    background: #e9edf161;
+    border-radius: 5px;
+    font-size: 2rem;
+}
+form label {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    padding: 1.8rem;
+    background: #5e5edb;
+    color: white;
+    cursor: pointer;
+}   
+form button {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    padding: 1.8rem;
+    width: 40%;
+    border: none;
+    background-color: #04c5a6;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+a {
+    text-decoration: none;
+    color: #3b5aaf;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: italic;
+}
