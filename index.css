@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,300&family=Roboto:wght@100;300;400&display=swap');
 html {
-    font-size: 10px;
+    font-size: 10px; /* it equel to 62.5%*/
 }
 body {
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 .main {
     width: 40%;
@@ -64,4 +67,92 @@ p {
     text-align: center;
     font-size: 1.5rem;
     font-style: italic;
+}
+
+
+/** start product.php page**/
+section {
+    padding: 5rem 9%; /*instead of container with specific value*/
+}
+.gallery h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    color: #108310;
+    border: 1px solid #efcdcd;
+    width: fit-content;
+    margin: auto;
+    padding: 2rem 2rem;
+    margin-bottom: 4rem;
+}
+.gallery .all-prod {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 2rem;
+}
+.gallery .content {
+    border: 1px solid #97898973;
+}
+.gallery img {
+    width: 100%;
+}
+.gallery .info {
+    text-align: center;
+    font-size: 3rem;
+}
+.gallery .info h5 {
+    border-top: 1px solid #ebdfdf8c;
+    padding-top: 2rem;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+}
+.gallery .info p {
+    margin: 0;
+}
+.gallery .info a {
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 3rem;
+    margin-right: 1rem;
+    border-radius: 4px;
+}
+.gallery .info > a {
+    background-color: red;
+}
+.gallery .info a:nth-of-type(2) {
+     background-color: blue;
+}
+/** End product.php page**/
+
+
+
+
+
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+    .header {
+        padding: 1.5rem 2rem;
+    }
+    section {
+        padding: 5rem 2rem;
+    }
+}
+@media (max-width: 768px) {
+        html {
+        font-size: 52%;
+    }
+}
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+    .gallery h1 {
+        font-size: 2.5rem;
+}
+
 }
