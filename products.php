@@ -12,34 +12,27 @@
 <body>
     <section class="gallery">
         <h1>all products</h1>
-        <div class="all-prod">
-            <div class="content">
-                <img src="images/product-4.webp" alt="">
-                <div class="info">
-                    <h5>lips</h5>
-                    <p>20$</p>
-                    <a href="">delet</a>
-                    <a href="">modify</a>
+        <div class='all-prod'>
+            <?php
+            include('config.php');
+            $result = mysqli_query($con, "SELECT * FROM prod");
+            while ($row = mysqli_fetch_array($result)) {
+                echo "
+            
+                <div class='content'>
+                    <img src='$row[image]'>
+                    <div class='info'>
+                        <h5>$row[name]</h5>
+                        <p>$row[price]</p>
+                        <a href='delete.php? id=$row[id]'>delete</a>
+                        <a href='update.php? id=$row[id]'>modify</a>
+                    </div>
                 </div>
-            </div>
-            <div class="content">
-                <img src="images/product-4.webp" alt="">
-                <div class="info">
-                    <h5>lips</h5>
-                    <p>20$</p>
-                    <a href="">delet</a>
-                    <a href="">modify</a>
-                </div>
-            </div>
-            <div class="content">
-                <img src="images/product-4.webp" alt="">
-                <div class="info">
-                    <h5>lips</h5>
-                    <p>20$</p>
-                    <a href="">delet</a>
-                    <a href="">modify</a>
-                </div>
-            </div>
+            
+
+                ";
+            }
+            ?>
         </div>
     </section>
 </body>
