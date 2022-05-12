@@ -13,7 +13,7 @@
 
     <div class="main">
         <form action="insert.php" method="post" enctype="multipart/form-data">
-            <h2>Oline shop</h2>
+            <h2>Online shop</h2>
             <img src="logo.jpg" alt="logo" width="450px">
             <input type="text" name="name">
             <input type="text" name="price">
